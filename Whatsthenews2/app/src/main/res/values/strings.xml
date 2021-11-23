@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">What\'s the news</string>
+    <string name="app_name">What\'s the News?</string>
+    <string name="location">LOCATION</string>
+    <string name="india">India</string>
+    <string name="search_for_news_topics">Search for news topics..</string>
 </resources>
