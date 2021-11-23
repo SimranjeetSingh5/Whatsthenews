@@ -129,7 +129,6 @@
         android:id="@+id/topHeadlinesRV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/_10sdp"
         tools:listitem="@layout/list_item"
         app:layout_constraintTop_toBottomOf="@id/sortRL"
         app:layout_constraintStart_toStartOf="parent"

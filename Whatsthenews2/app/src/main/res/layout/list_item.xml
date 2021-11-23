@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_120sdp"
+    android:layout_height="@dimen/_140sdp"
+    android:padding="@dimen/_10sdp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -15,11 +16,11 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <LinearLayout
-                android:layout_width="@dimen/_200sdp"
+                android:layout_width="@dimen/_180sdp"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <TextView
@@ -31,15 +32,16 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginStart="@dimen/_6sdp"
                     android:layout_marginLeft="@dimen/_6sdp"
-                    android:textStyle="italic"
-                    android:textColor="@color/primary_text"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
                     />
                 <TextView
                     android:id="@+id/title"
-                    android:layout_width="@dimen/_200sdp"
+                    android:layout_width="wrap_content"
                     android:layout_height="@dimen/_60sdp"
                     android:text="@string/app_name"
                     android:maxLines="3"
+                    android:ellipsize="end"
                     android:layout_marginStart="@dimen/_6sdp"
                     android:layout_marginLeft="@dimen/_6sdp"
                     android:textSize="@dimen/_10ssp"
@@ -59,12 +61,11 @@
 
             </LinearLayout>
             <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageNews"
                 android:layout_width="@dimen/_100sdp"
-                android:layout_height="match_parent"
-                app:riv_corner_radius="@dimen/_10sdp"
+                android:layout_height="@dimen/_100sdp"
                 android:padding="@dimen/_6sdp"
-                android:layout_marginEnd="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"
+                app:riv_corner_radius="@dimen/_10sdp"
                 android:src="@mipmap/ic_launcher"/>
 
 

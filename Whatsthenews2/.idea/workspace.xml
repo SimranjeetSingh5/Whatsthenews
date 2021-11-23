@@ -39,53 +39,21 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf3f645c-9e18-4da3-b4cf-618b86b386f0" name="Default Changelist" comment="init">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/activities/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/adapter/MainAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/listeners/NewsListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/models/News.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/network/ApiClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/network/ApiService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/repository/TopHeadlinesRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/responses/NewsResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/util/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/viewmodel/TopHeadlinesViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/viewmodel/TopHeadlinesViewModelFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_location.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/helvetica.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" afterDir="false" />
+    <list default="true" id="bf3f645c-9e18-4da3-b4cf-618b86b386f0" name="Default Changelist" comment="MVVM architecture build setup and API fetching">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_2_4_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_7_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_7_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_3_6_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_5_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_5_31.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/What's_the_news.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/What's_the_news.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/activities/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/adapter/MainAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/adapter/MainAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/models/News.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/models/News.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/network/ApiClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/network/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/network/ApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/repository/TopHeadlinesRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/repository/TopHeadlinesRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/responses/NewsResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/responses/NewsResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/viewmodel/TopHeadlinesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/viewmodel/TopHeadlinesViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,8 +84,8 @@
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -239,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637573648538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="MVVM architecture build setup and API fetching">
+      <created>1637662064943</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1637662064943</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +243,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Setup and basic UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Setup and basic UI" />
+    <MESSAGE value="MVVM architecture build setup and API fetching" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVVM architecture build setup and API fetching" />
   </component>
   <component name="WindowStateProjectService">
     <state x="166" y="130" key="#PSD" timestamp="1637574752550">
@@ -283,10 +259,14 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="417" y="185" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1298.768@0.0.1298.768" timestamp="1637575217147" />
-    <state x="680" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1637660442477">
+    <state x="680" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1637691612457">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state x="680" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1298.768@0.0.1298.768" timestamp="1637660442477" />
+    <state x="680" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1298.768@0.0.1298.768" timestamp="1637691612457" />
+    <state x="194" y="308" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1637693771188">
+      <screen x="0" y="0" width="1298" height="768" />
+    </state>
+    <state x="194" y="308" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1298.768@0.0.1298.768" timestamp="1637693771188" />
     <state x="420" y="175" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1637587643020">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
@@ -311,22 +291,38 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="141" y="67" key="Git.Interactive.Rebase.Dialog/0.0.1298.768@0.0.1298.768" timestamp="1637575204820" />
-    <state width="1254" height="192" key="GridCell.Tab.0.bottom" timestamp="1637661966367">
+    <state width="1254" height="191" key="GridCell.Tab.0.bottom" timestamp="1637693052866">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state width="1254" height="192" key="GridCell.Tab.0.bottom/0.0.1298.768@0.0.1298.768" timestamp="1637661966367" />
-    <state width="1254" height="192" key="GridCell.Tab.0.center" timestamp="1637661966366">
+    <state width="1254" height="191" key="GridCell.Tab.0.bottom/0.0.1298.768@0.0.1298.768" timestamp="1637693052866" />
+    <state width="1254" height="191" key="GridCell.Tab.0.center" timestamp="1637693052866">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state width="1254" height="192" key="GridCell.Tab.0.center/0.0.1298.768@0.0.1298.768" timestamp="1637661966366" />
-    <state width="1254" height="192" key="GridCell.Tab.0.left" timestamp="1637661966366">
+    <state width="1254" height="191" key="GridCell.Tab.0.center/0.0.1298.768@0.0.1298.768" timestamp="1637693052866" />
+    <state width="1254" height="191" key="GridCell.Tab.0.left" timestamp="1637693052866">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state width="1254" height="192" key="GridCell.Tab.0.left/0.0.1298.768@0.0.1298.768" timestamp="1637661966366" />
-    <state width="1254" height="192" key="GridCell.Tab.0.right" timestamp="1637661966367">
+    <state width="1254" height="191" key="GridCell.Tab.0.left/0.0.1298.768@0.0.1298.768" timestamp="1637693052866" />
+    <state width="1254" height="191" key="GridCell.Tab.0.right" timestamp="1637693052866">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state width="1254" height="192" key="GridCell.Tab.0.right/0.0.1298.768@0.0.1298.768" timestamp="1637661966367" />
+    <state width="1254" height="191" key="GridCell.Tab.0.right/0.0.1298.768@0.0.1298.768" timestamp="1637693052866" />
+    <state width="1254" height="192" key="GridCell.Tab.1.bottom" timestamp="1637688042227">
+      <screen x="0" y="0" width="1298" height="768" />
+    </state>
+    <state width="1254" height="192" key="GridCell.Tab.1.bottom/0.0.1298.768@0.0.1298.768" timestamp="1637688042227" />
+    <state width="1254" height="192" key="GridCell.Tab.1.center" timestamp="1637688042227">
+      <screen x="0" y="0" width="1298" height="768" />
+    </state>
+    <state width="1254" height="192" key="GridCell.Tab.1.center/0.0.1298.768@0.0.1298.768" timestamp="1637688042227" />
+    <state width="1254" height="192" key="GridCell.Tab.1.left" timestamp="1637688042227">
+      <screen x="0" y="0" width="1298" height="768" />
+    </state>
+    <state width="1254" height="192" key="GridCell.Tab.1.left/0.0.1298.768@0.0.1298.768" timestamp="1637688042227" />
+    <state width="1254" height="192" key="GridCell.Tab.1.right" timestamp="1637688042227">
+      <screen x="0" y="0" width="1298" height="768" />
+    </state>
+    <state width="1254" height="192" key="GridCell.Tab.1.right/0.0.1298.768@0.0.1298.768" timestamp="1637688042227" />
     <state x="374" y="104" key="RollbackChangesDialog" timestamp="1637574627614">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
@@ -335,10 +331,10 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="479" y="253" key="VCS.EditChangelistDialog/0.0.1298.768@0.0.1298.768" timestamp="1637574614597" />
-    <state x="241" y="116" key="Vcs.Push.Dialog.v2" timestamp="1637574717242">
+    <state x="241" y="116" key="Vcs.Push.Dialog.v2" timestamp="1637662071608">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state x="241" y="116" key="Vcs.Push.Dialog.v2/0.0.1298.768@0.0.1298.768" timestamp="1637574717242" />
+    <state x="241" y="116" key="Vcs.Push.Dialog.v2/0.0.1298.768@0.0.1298.768" timestamp="1637662071608" />
     <state x="92" y="92" width="1114" height="584" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1637578431306">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
@@ -351,9 +347,9 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="755" y="179" key="refactoring.ChangeSignatureDialog/0.0.1298.768@0.0.1298.768" timestamp="1637658104314" />
-    <state x="305" y="172" key="run.anything.popup" timestamp="1637586867568">
+    <state x="305" y="172" key="run.anything.popup" timestamp="1637690418893">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state x="305" y="172" key="run.anything.popup/0.0.1298.768@0.0.1298.768" timestamp="1637586867568" />
+    <state x="305" y="172" key="run.anything.popup/0.0.1298.768@0.0.1298.768" timestamp="1637690418893" />
   </component>
 </project>

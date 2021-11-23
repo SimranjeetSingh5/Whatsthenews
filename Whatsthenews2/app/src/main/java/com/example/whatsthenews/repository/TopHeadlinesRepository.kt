@@ -1,9 +1,7 @@
 package com.example.whatsthenews.repository
 
-import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.whatsthenews.network.ApiClient
 import com.example.whatsthenews.network.ApiService
 import com.example.whatsthenews.responses.NewsResponse
 import retrofit2.Call
@@ -29,5 +27,6 @@ class TopHeadlinesRepository constructor(private val retrofitService: ApiService
                 })
                 return data
         }
+
 
 }
