@@ -17,6 +17,7 @@ import com.example.whatsthenews.listeners.NewsListener
 import com.example.whatsthenews.models.News
 import com.example.whatsthenews.network.ApiService
 import com.example.whatsthenews.repository.TopHeadlinesRepository
+import com.example.whatsthenews.util.ConnectionLiveData
 import com.example.whatsthenews.viewmodel.TopHeadlinesViewModel
 import com.example.whatsthenews.viewmodel.TopHeadlinesViewModelFactory
 
@@ -28,17 +29,36 @@ class MainActivity : AppCompatActivity(),NewsListener{
     private lateinit var topHeadlinesRepository: TopHeadlinesRepository
     private var apiService = ApiService.getInstance()
     private var news:MutableList<News> = ArrayList()
+    private lateinit var cld:ConnectionLiveData
     private lateinit var adapter:MainAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding.root)
-//        checkInternet()
-        doInitialization()
+        checkInternet()
 
 
     }
+    private fun checkInternet() {
+        cld = ConnectionLiveData(application)
+
+        cld.observe(this, { isConnected ->
+
+            if (isConnected){
+
+                activityMainBinding.noInternetCL.visibility = View.INVISIBLE
+                doInitialization()
+
+            }else{
+                activityMainBinding.topHeadlinesRV.visibility = View.INVISIBLE
+                activityMainBinding.noInternetCL.visibility = View.VISIBLE
+                activityMainBinding.noInternetButton?.setOnClickListener { checkInternet() }
+            }
+
+        })
+    }
+
 
 
 
