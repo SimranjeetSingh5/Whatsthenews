@@ -20,12 +20,6 @@ class MainAdapter(var news: MutableList<News>?, private val newsListener: NewsLi
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainAdapter.ViewHolder {
 
-
-//        if (layoutInflater==null) {
-//            layoutInflater = LayoutInflater.from(parent.context)
-//        }
-//        val binding = layoutInflater.inflate(layoutInflater,R.layout.list_item,parent,false)
-//        return ViewHolder(binding)
         val binding =
             ListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 

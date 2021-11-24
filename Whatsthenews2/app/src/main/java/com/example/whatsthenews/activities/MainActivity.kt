@@ -16,8 +16,11 @@ import com.example.whatsthenews.databinding.ActivityMainBinding
 import com.example.whatsthenews.listeners.NewsListener
 import com.example.whatsthenews.models.News
 import com.example.whatsthenews.network.ApiService
+import com.example.whatsthenews.repository.SearchNewsRepository
 import com.example.whatsthenews.repository.TopHeadlinesRepository
 import com.example.whatsthenews.util.ConnectionLiveData
+import com.example.whatsthenews.viewmodel.SearchNewViewModel
+import com.example.whatsthenews.viewmodel.SearchViewModelFactory
 import com.example.whatsthenews.viewmodel.TopHeadlinesViewModel
 import com.example.whatsthenews.viewmodel.TopHeadlinesViewModelFactory
 
@@ -27,10 +30,14 @@ class MainActivity : AppCompatActivity(),NewsListener{
     private lateinit var activityMainBinding: ActivityMainBinding
     private lateinit var topHeadlinesViewModel:TopHeadlinesViewModel
     private lateinit var topHeadlinesRepository: TopHeadlinesRepository
+    private lateinit var searchNewViewModel:SearchNewViewModel
+    private lateinit var searchNewsRepository:SearchNewsRepository
     private var apiService = ApiService.getInstance()
     private var news:MutableList<News> = ArrayList()
+    private var searchResult:MutableList<News> = ArrayList()
     private lateinit var cld:ConnectionLiveData
     private lateinit var adapter:MainAdapter
+    private lateinit var searchAdapter:MainAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -81,6 +88,35 @@ class MainActivity : AppCompatActivity(),NewsListener{
         activityMainBinding.topHeadlinesRV.layoutManager = llm
         adapter = MainAdapter(news, this)
         activityMainBinding.topHeadlinesRV.adapter = adapter
+        activityMainBinding.searchButton.setOnClickListener {
+            val search = activityMainBinding.searchET.text.toString()
+            searchTVShows(search)
+
+        }
+
+    }
+
+    private fun searchTVShows(search:String) {
+        searchNewsRepository = SearchNewsRepository(apiService)
+        searchNewViewModel = SearchNewViewModel(searchNewsRepository)
+        searchAdapter = MainAdapter(news, this)
+
+        searchNewViewModel = ViewModelProvider(
+            this, SearchViewModelFactory(SearchNewsRepository(apiService))).get(searchNewViewModel::class.java)
+
+//        TODO->Testing of search
+        searchNewViewModel.getSearchResult(search).observe(this,{
+            searchResult.addAll(it.articles)
+            searchAdapter.notifyDataSetChanged()
+        })
+
+        searchNewViewModel.getSearchResult(search)
+        val llm = LinearLayoutManager(this)
+        llm.orientation = LinearLayoutManager.VERTICAL
+        activityMainBinding.searchResultRV.visibility = View.VISIBLE
+        activityMainBinding.topHeadlinesRV.visibility = View.GONE
+        activityMainBinding.searchResultRV.layoutManager = llm
+        activityMainBinding.searchResultRV.adapter = searchAdapter
 
 
 
@@ -104,11 +140,9 @@ class MainActivity : AppCompatActivity(),NewsListener{
 
     override fun onNewsClicked(news: News?) {
 
-
         val intent = Intent(this, NewsDetailActivity::class.java)
         intent.putExtra("currentNews", news)
         startActivity(intent)
-//        TODO-<send data to next activity
 
     }
 

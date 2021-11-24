@@ -6,7 +6,8 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Result" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BranchesTreeState">
@@ -40,20 +41,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf3f645c-9e18-4da3-b4cf-618b86b386f0" name="Default Changelist" comment="Displaying fetched Data in RecyclerView">
+    <list default="true" id="bf3f645c-9e18-4da3-b4cf-618b86b386f0" name="Default Changelist" comment="Internet Connection error handling">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/What's_the_news.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/What's_the_news.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/activities/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/adapter/MainAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/adapter/MainAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/listeners/NewsListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/listeners/NewsListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/models/News.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/models/News.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/network/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/network/ApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +220,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637693879543</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="News Details Screen setup">
+      <created>1637747438990</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637747438990</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Internet Connection error handling">
+      <created>1637747628898</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637747628898</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,7 +265,9 @@
     <MESSAGE value="Project Setup and basic UI" />
     <MESSAGE value="MVVM architecture build setup and API fetching" />
     <MESSAGE value="Displaying fetched Data in RecyclerView" />
-    <option name="LAST_COMMIT_MESSAGE" value="Displaying fetched Data in RecyclerView" />
+    <MESSAGE value="News Details Screen setup" />
+    <MESSAGE value="Internet Connection error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Internet Connection error handling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="166" y="130" key="#PSD" timestamp="1637697439541">
@@ -270,10 +282,10 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="417" y="185" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1298.768@0.0.1298.768" timestamp="1637575217147" />
-    <state x="677" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1637741853272">
+    <state x="677" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1637756585686">
       <screen x="0" y="0" width="1293" height="768" />
     </state>
-    <state x="677" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1293.768@0.0.1293.768" timestamp="1637741853272" />
+    <state x="677" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1293.768@0.0.1293.768" timestamp="1637756585686" />
     <state x="680" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1298.768@0.0.1298.768" timestamp="1637736208244" />
     <state x="194" y="308" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1637693771188">
       <screen x="0" y="0" width="1298" height="768" />
@@ -296,9 +308,10 @@
     </state>
     <state x="491" y="173" key="AndroidCreateXmlResourceDialog/0.0.1293.768@0.0.1293.768" timestamp="1637744713121" />
     <state x="493" y="173" key="AndroidCreateXmlResourceDialog/0.0.1298.768@0.0.1298.768" timestamp="1637587024585" />
-    <state x="105" y="119" width="1002" height="567" key="DiffContextDialog" timestamp="1637737772363">
-      <screen x="0" y="0" width="1298" height="768" />
+    <state x="105" y="119" width="999" height="567" key="DiffContextDialog" timestamp="1637758729043">
+      <screen x="0" y="0" width="1293" height="768" />
     </state>
+    <state x="105" y="119" width="999" height="567" key="DiffContextDialog/0.0.1293.768@0.0.1293.768" timestamp="1637758729043" />
     <state x="105" y="119" width="1002" height="567" key="DiffContextDialog/0.0.1298.768@0.0.1298.768" timestamp="1637737772363" />
     <state x="329" y="138" key="Downloadable.Font.Dialog.Size" timestamp="1637583081831">
       <screen x="0" y="0" width="1298" height="768" />
@@ -308,25 +321,25 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="141" y="67" key="Git.Interactive.Rebase.Dialog/0.0.1298.768@0.0.1298.768" timestamp="1637575204820" />
-    <state width="601" height="486" key="GridCell.Tab.0.bottom" timestamp="1637746193777">
+    <state width="1249" height="166" key="GridCell.Tab.0.bottom" timestamp="1637758488319">
       <screen x="0" y="0" width="1293" height="768" />
     </state>
-    <state width="601" height="486" key="GridCell.Tab.0.bottom/0.0.1293.768@0.0.1293.768" timestamp="1637746193777" />
+    <state width="1249" height="166" key="GridCell.Tab.0.bottom/0.0.1293.768@0.0.1293.768" timestamp="1637758488319" />
     <state width="1254" height="191" key="GridCell.Tab.0.bottom/0.0.1298.768@0.0.1298.768" timestamp="1637740712433" />
-    <state width="601" height="486" key="GridCell.Tab.0.center" timestamp="1637746193776">
+    <state width="1249" height="166" key="GridCell.Tab.0.center" timestamp="1637758488319">
       <screen x="0" y="0" width="1293" height="768" />
     </state>
-    <state width="601" height="486" key="GridCell.Tab.0.center/0.0.1293.768@0.0.1293.768" timestamp="1637746193776" />
+    <state width="1249" height="166" key="GridCell.Tab.0.center/0.0.1293.768@0.0.1293.768" timestamp="1637758488319" />
     <state width="1254" height="191" key="GridCell.Tab.0.center/0.0.1298.768@0.0.1298.768" timestamp="1637740712433" />
-    <state width="601" height="486" key="GridCell.Tab.0.left" timestamp="1637746193776">
+    <state width="1249" height="166" key="GridCell.Tab.0.left" timestamp="1637758488319">
       <screen x="0" y="0" width="1293" height="768" />
     </state>
-    <state width="601" height="486" key="GridCell.Tab.0.left/0.0.1293.768@0.0.1293.768" timestamp="1637746193776" />
+    <state width="1249" height="166" key="GridCell.Tab.0.left/0.0.1293.768@0.0.1293.768" timestamp="1637758488319" />
     <state width="1254" height="191" key="GridCell.Tab.0.left/0.0.1298.768@0.0.1298.768" timestamp="1637740712433" />
-    <state width="601" height="486" key="GridCell.Tab.0.right" timestamp="1637746193776">
+    <state width="1249" height="166" key="GridCell.Tab.0.right" timestamp="1637758488319">
       <screen x="0" y="0" width="1293" height="768" />
     </state>
-    <state width="601" height="486" key="GridCell.Tab.0.right/0.0.1293.768@0.0.1293.768" timestamp="1637746193776" />
+    <state width="1249" height="166" key="GridCell.Tab.0.right/0.0.1293.768@0.0.1293.768" timestamp="1637758488319" />
     <state width="1254" height="191" key="GridCell.Tab.0.right/0.0.1298.768@0.0.1298.768" timestamp="1637740712433" />
     <state width="1254" height="192" key="GridCell.Tab.1.bottom" timestamp="1637701470844">
       <screen x="0" y="0" width="1298" height="768" />
@@ -352,14 +365,15 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="479" y="253" key="VCS.EditChangelistDialog/0.0.1298.768@0.0.1298.768" timestamp="1637574614597" />
-    <state x="240" y="116" key="Vcs.Push.Dialog.v2" timestamp="1637747468383">
+    <state x="240" y="116" key="Vcs.Push.Dialog.v2" timestamp="1637747684121">
       <screen x="0" y="0" width="1293" height="768" />
     </state>
-    <state x="240" y="116" key="Vcs.Push.Dialog.v2/0.0.1293.768@0.0.1293.768" timestamp="1637747468383" />
+    <state x="240" y="116" key="Vcs.Push.Dialog.v2/0.0.1293.768@0.0.1293.768" timestamp="1637747684121" />
     <state x="241" y="116" key="Vcs.Push.Dialog.v2/0.0.1298.768@0.0.1298.768" timestamp="1637693888859" />
-    <state x="92" y="92" width="1114" height="584" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1637737772363">
-      <screen x="0" y="0" width="1298" height="768" />
+    <state x="92" y="92" width="1110" height="584" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1637758729043">
+      <screen x="0" y="0" width="1293" height="768" />
     </state>
+    <state x="92" y="92" width="1110" height="584" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1293.768@0.0.1293.768" timestamp="1637758729043" />
     <state x="92" y="92" width="1114" height="584" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1298.768@0.0.1298.768" timestamp="1637737772363" />
     <state x="426" y="117" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1637578601556">
       <screen x="0" y="0" width="1298" height="768" />
@@ -369,6 +383,10 @@
       <screen x="0" y="0" width="1293" height="768" />
     </state>
     <state x="643" y="108" width="462" height="567" key="dock-window-1/0.0.1293.768@0.0.1293.768" timestamp="1637747163354" />
+    <state x="318" y="172" key="git4idea.merge.GitPullDialog" timestamp="1637758626489">
+      <screen x="0" y="0" width="1293" height="768" />
+    </state>
+    <state x="318" y="172" key="git4idea.merge.GitPullDialog/0.0.1293.768@0.0.1293.768" timestamp="1637758626489" />
     <state x="755" y="179" key="refactoring.ChangeSignatureDialog" timestamp="1637697335573">
       <screen x="0" y="0" width="1298" height="768" />
     </state>

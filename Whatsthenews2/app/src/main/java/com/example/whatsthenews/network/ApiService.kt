@@ -13,6 +13,9 @@ interface ApiService {
     @GET("top-headlines?country=in")
     fun getTopHeadlines( @Query("apiKey") apiKey: String = Constant.API_KEY): Call<NewsResponse>?
 
+    @GET("everything")
+    fun getSearchResult(@Query("qInTitle") query:String, @Query("apiKey") apiKey: String = Constant.API_KEY): Call<NewsResponse>?
+
 
     companion object {
 
