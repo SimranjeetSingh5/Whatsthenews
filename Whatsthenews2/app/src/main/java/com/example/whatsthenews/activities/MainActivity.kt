@@ -1,11 +1,19 @@
 package com.example.whatsthenews.activities
 
+import android.content.Context
+import android.content.Intent
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
+import android.os.Build
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.whatsthenews.adapter.MainAdapter
 import com.example.whatsthenews.databinding.ActivityMainBinding
+import com.example.whatsthenews.listeners.NewsListener
 import com.example.whatsthenews.models.News
 import com.example.whatsthenews.network.ApiService
 import com.example.whatsthenews.repository.TopHeadlinesRepository
@@ -13,41 +21,45 @@ import com.example.whatsthenews.viewmodel.TopHeadlinesViewModel
 import com.example.whatsthenews.viewmodel.TopHeadlinesViewModelFactory
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),NewsListener{
 
-    private lateinit var activityMainBinding:ActivityMainBinding
+    private lateinit var activityMainBinding: ActivityMainBinding
     private lateinit var topHeadlinesViewModel:TopHeadlinesViewModel
     private lateinit var topHeadlinesRepository: TopHeadlinesRepository
     private var apiService = ApiService.getInstance()
     private var news:MutableList<News> = ArrayList()
-    private lateinit var newsSources:String
-    lateinit var adapter:MainAdapter
+    private lateinit var adapter:MainAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding.root)
+//        checkInternet()
         doInitialization()
 
+
     }
+
+
+
 
     private fun doInitialization() {
         activityMainBinding.topHeadlinesRV.setHasFixedSize(true)
         topHeadlinesRepository = TopHeadlinesRepository(apiService)
         topHeadlinesViewModel = TopHeadlinesViewModel(topHeadlinesRepository)
         topHeadlinesViewModel = ViewModelProvider(
-            this, TopHeadlinesViewModelFactory(
+                this, TopHeadlinesViewModelFactory(
                 TopHeadlinesRepository(
-                    apiService
+                        apiService
                 )
-            )
+        )
         ).get(topHeadlinesViewModel::class.java)
 
         getTopHeadlines()
         val llm = LinearLayoutManager(this)
         llm.orientation = LinearLayoutManager.VERTICAL
         activityMainBinding.topHeadlinesRV.layoutManager = llm
-        adapter = MainAdapter(news)
+        adapter = MainAdapter(news, this)
         activityMainBinding.topHeadlinesRV.adapter = adapter
 
 
@@ -57,11 +69,10 @@ class MainActivity : AppCompatActivity() {
     private fun getTopHeadlines() {
 
         topHeadlinesViewModel.getTopHeadlines().observe(this, {
-            if (it!=null){
+            if (it != null) {
                 news.addAll(it.articles)
                 adapter.notifyDataSetChanged()
             }
-
 
 
         })
@@ -70,5 +81,17 @@ class MainActivity : AppCompatActivity() {
         topHeadlinesViewModel.getTopHeadlines()
 
     }
+
+    override fun onNewsClicked(news: News?) {
+
+
+        val intent = Intent(this, NewsDetailActivity::class.java)
+        intent.putExtra("currentNews", news)
+        startActivity(intent)
+//        TODO-<send data to next activity
+
+    }
+
+
 
 }

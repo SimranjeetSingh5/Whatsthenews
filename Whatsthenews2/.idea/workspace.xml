@@ -6,6 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="BranchesTreeState">
@@ -39,21 +40,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf3f645c-9e18-4da3-b4cf-618b86b386f0" name="Default Changelist" comment="MVVM architecture build setup and API fetching">
+    <list default="true" id="bf3f645c-9e18-4da3-b4cf-618b86b386f0" name="Default Changelist" comment="Displaying fetched Data in RecyclerView">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/What's_the_news.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/What's_the_news.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/activities/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/adapter/MainAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/adapter/MainAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/listeners/NewsListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/listeners/NewsListener.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/models/News.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/models/News.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/network/ApiClient.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/network/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/network/ApiService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/repository/TopHeadlinesRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/repository/TopHeadlinesRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/responses/NewsResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/responses/NewsResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/viewmodel/TopHeadlinesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/whatsthenews/viewmodel/TopHeadlinesViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +117,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.whatsthenews.activities" />
+    </key>
+    <key name="android.template.350329336">
       <recent name="com.example.whatsthenews.activities" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -214,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637662064943</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Displaying fetched Data in RecyclerView">
+      <created>1637693879543</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1637693879543</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,13 +254,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Setup and basic UI" />
     <MESSAGE value="MVVM architecture build setup and API fetching" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVVM architecture build setup and API fetching" />
+    <MESSAGE value="Displaying fetched Data in RecyclerView" />
+    <option name="LAST_COMMIT_MESSAGE" value="Displaying fetched Data in RecyclerView" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="166" y="130" key="#PSD" timestamp="1637574752550">
+    <state x="166" y="130" key="#PSD" timestamp="1637697439541">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state x="166" y="130" key="#PSD/0.0.1298.768@0.0.1298.768" timestamp="1637574752550" />
+    <state x="166" y="130" key="#PSD/0.0.1298.768@0.0.1298.768" timestamp="1637697439541" />
     <state x="103" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637661219767">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
@@ -259,10 +270,11 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="417" y="185" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1298.768@0.0.1298.768" timestamp="1637575217147" />
-    <state x="680" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1637691612457">
-      <screen x="0" y="0" width="1298" height="768" />
+    <state x="677" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1637741853272">
+      <screen x="0" y="0" width="1293" height="768" />
     </state>
-    <state x="680" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1298.768@0.0.1298.768" timestamp="1637691612457" />
+    <state x="677" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1293.768@0.0.1293.768" timestamp="1637741853272" />
+    <state x="680" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1298.768@0.0.1298.768" timestamp="1637736208244" />
     <state x="194" y="308" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1637693771188">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
@@ -279,10 +291,15 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="229" y="138" key="AndroidCreateResourceFileDialog/0.0.1298.768@0.0.1298.768" timestamp="1637588237165" />
-    <state x="493" y="173" key="AndroidCreateXmlResourceDialog" timestamp="1637587024585">
+    <state x="491" y="173" key="AndroidCreateXmlResourceDialog" timestamp="1637744713121">
+      <screen x="0" y="0" width="1293" height="768" />
+    </state>
+    <state x="491" y="173" key="AndroidCreateXmlResourceDialog/0.0.1293.768@0.0.1293.768" timestamp="1637744713121" />
+    <state x="493" y="173" key="AndroidCreateXmlResourceDialog/0.0.1298.768@0.0.1298.768" timestamp="1637587024585" />
+    <state x="105" y="119" width="1002" height="567" key="DiffContextDialog" timestamp="1637737772363">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state x="493" y="173" key="AndroidCreateXmlResourceDialog/0.0.1298.768@0.0.1298.768" timestamp="1637587024585" />
+    <state x="105" y="119" width="1002" height="567" key="DiffContextDialog/0.0.1298.768@0.0.1298.768" timestamp="1637737772363" />
     <state x="329" y="138" key="Downloadable.Font.Dialog.Size" timestamp="1637583081831">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
@@ -291,38 +308,42 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="141" y="67" key="Git.Interactive.Rebase.Dialog/0.0.1298.768@0.0.1298.768" timestamp="1637575204820" />
-    <state width="1254" height="191" key="GridCell.Tab.0.bottom" timestamp="1637693052866">
+    <state width="601" height="486" key="GridCell.Tab.0.bottom" timestamp="1637746193777">
+      <screen x="0" y="0" width="1293" height="768" />
+    </state>
+    <state width="601" height="486" key="GridCell.Tab.0.bottom/0.0.1293.768@0.0.1293.768" timestamp="1637746193777" />
+    <state width="1254" height="191" key="GridCell.Tab.0.bottom/0.0.1298.768@0.0.1298.768" timestamp="1637740712433" />
+    <state width="601" height="486" key="GridCell.Tab.0.center" timestamp="1637746193776">
+      <screen x="0" y="0" width="1293" height="768" />
+    </state>
+    <state width="601" height="486" key="GridCell.Tab.0.center/0.0.1293.768@0.0.1293.768" timestamp="1637746193776" />
+    <state width="1254" height="191" key="GridCell.Tab.0.center/0.0.1298.768@0.0.1298.768" timestamp="1637740712433" />
+    <state width="601" height="486" key="GridCell.Tab.0.left" timestamp="1637746193776">
+      <screen x="0" y="0" width="1293" height="768" />
+    </state>
+    <state width="601" height="486" key="GridCell.Tab.0.left/0.0.1293.768@0.0.1293.768" timestamp="1637746193776" />
+    <state width="1254" height="191" key="GridCell.Tab.0.left/0.0.1298.768@0.0.1298.768" timestamp="1637740712433" />
+    <state width="601" height="486" key="GridCell.Tab.0.right" timestamp="1637746193776">
+      <screen x="0" y="0" width="1293" height="768" />
+    </state>
+    <state width="601" height="486" key="GridCell.Tab.0.right/0.0.1293.768@0.0.1293.768" timestamp="1637746193776" />
+    <state width="1254" height="191" key="GridCell.Tab.0.right/0.0.1298.768@0.0.1298.768" timestamp="1637740712433" />
+    <state width="1254" height="192" key="GridCell.Tab.1.bottom" timestamp="1637701470844">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state width="1254" height="191" key="GridCell.Tab.0.bottom/0.0.1298.768@0.0.1298.768" timestamp="1637693052866" />
-    <state width="1254" height="191" key="GridCell.Tab.0.center" timestamp="1637693052866">
+    <state width="1254" height="192" key="GridCell.Tab.1.bottom/0.0.1298.768@0.0.1298.768" timestamp="1637701470844" />
+    <state width="1254" height="192" key="GridCell.Tab.1.center" timestamp="1637701470843">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state width="1254" height="191" key="GridCell.Tab.0.center/0.0.1298.768@0.0.1298.768" timestamp="1637693052866" />
-    <state width="1254" height="191" key="GridCell.Tab.0.left" timestamp="1637693052866">
+    <state width="1254" height="192" key="GridCell.Tab.1.center/0.0.1298.768@0.0.1298.768" timestamp="1637701470843" />
+    <state width="1254" height="192" key="GridCell.Tab.1.left" timestamp="1637701470843">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state width="1254" height="191" key="GridCell.Tab.0.left/0.0.1298.768@0.0.1298.768" timestamp="1637693052866" />
-    <state width="1254" height="191" key="GridCell.Tab.0.right" timestamp="1637693052866">
+    <state width="1254" height="192" key="GridCell.Tab.1.left/0.0.1298.768@0.0.1298.768" timestamp="1637701470843" />
+    <state width="1254" height="192" key="GridCell.Tab.1.right" timestamp="1637701470843">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state width="1254" height="191" key="GridCell.Tab.0.right/0.0.1298.768@0.0.1298.768" timestamp="1637693052866" />
-    <state width="1254" height="192" key="GridCell.Tab.1.bottom" timestamp="1637688042227">
-      <screen x="0" y="0" width="1298" height="768" />
-    </state>
-    <state width="1254" height="192" key="GridCell.Tab.1.bottom/0.0.1298.768@0.0.1298.768" timestamp="1637688042227" />
-    <state width="1254" height="192" key="GridCell.Tab.1.center" timestamp="1637688042227">
-      <screen x="0" y="0" width="1298" height="768" />
-    </state>
-    <state width="1254" height="192" key="GridCell.Tab.1.center/0.0.1298.768@0.0.1298.768" timestamp="1637688042227" />
-    <state width="1254" height="192" key="GridCell.Tab.1.left" timestamp="1637688042227">
-      <screen x="0" y="0" width="1298" height="768" />
-    </state>
-    <state width="1254" height="192" key="GridCell.Tab.1.left/0.0.1298.768@0.0.1298.768" timestamp="1637688042227" />
-    <state width="1254" height="192" key="GridCell.Tab.1.right" timestamp="1637688042227">
-      <screen x="0" y="0" width="1298" height="768" />
-    </state>
-    <state width="1254" height="192" key="GridCell.Tab.1.right/0.0.1298.768@0.0.1298.768" timestamp="1637688042227" />
+    <state width="1254" height="192" key="GridCell.Tab.1.right/0.0.1298.768@0.0.1298.768" timestamp="1637701470843" />
     <state x="374" y="104" key="RollbackChangesDialog" timestamp="1637574627614">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
@@ -331,25 +352,29 @@
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="479" y="253" key="VCS.EditChangelistDialog/0.0.1298.768@0.0.1298.768" timestamp="1637574614597" />
-    <state x="241" y="116" key="Vcs.Push.Dialog.v2" timestamp="1637662071608">
+    <state x="241" y="116" key="Vcs.Push.Dialog.v2" timestamp="1637693888859">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state x="241" y="116" key="Vcs.Push.Dialog.v2/0.0.1298.768@0.0.1298.768" timestamp="1637662071608" />
-    <state x="92" y="92" width="1114" height="584" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1637578431306">
+    <state x="241" y="116" key="Vcs.Push.Dialog.v2/0.0.1298.768@0.0.1298.768" timestamp="1637693888859" />
+    <state x="92" y="92" width="1114" height="584" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1637737772363">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state x="92" y="92" width="1114" height="584" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1298.768@0.0.1298.768" timestamp="1637578431306" />
+    <state x="92" y="92" width="1114" height="584" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1298.768@0.0.1298.768" timestamp="1637737772363" />
     <state x="426" y="117" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1637578601556">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
     <state x="426" y="117" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1298.768@0.0.1298.768" timestamp="1637578601556" />
-    <state x="755" y="179" key="refactoring.ChangeSignatureDialog" timestamp="1637658104314">
+    <state x="643" y="108" width="462" height="567" key="dock-window-1" timestamp="1637747163354">
+      <screen x="0" y="0" width="1293" height="768" />
+    </state>
+    <state x="643" y="108" width="462" height="567" key="dock-window-1/0.0.1293.768@0.0.1293.768" timestamp="1637747163354" />
+    <state x="755" y="179" key="refactoring.ChangeSignatureDialog" timestamp="1637697335573">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state x="755" y="179" key="refactoring.ChangeSignatureDialog/0.0.1298.768@0.0.1298.768" timestamp="1637658104314" />
-    <state x="305" y="172" key="run.anything.popup" timestamp="1637690418893">
+    <state x="755" y="179" key="refactoring.ChangeSignatureDialog/0.0.1298.768@0.0.1298.768" timestamp="1637697335573" />
+    <state x="305" y="172" key="run.anything.popup" timestamp="1637737928367">
       <screen x="0" y="0" width="1298" height="768" />
     </state>
-    <state x="305" y="172" key="run.anything.popup/0.0.1298.768@0.0.1298.768" timestamp="1637690418893" />
+    <state x="305" y="172" key="run.anything.popup/0.0.1298.768@0.0.1298.768" timestamp="1637737928367" />
   </component>
 </project>

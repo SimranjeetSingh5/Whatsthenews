@@ -4,19 +4,22 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.whatsthenews.databinding.ListItemBinding
+import com.example.whatsthenews.listeners.NewsListener
 import com.example.whatsthenews.models.News
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 
 
-class MainAdapter(var news: MutableList<News>?):
+class MainAdapter(var news: MutableList<News>?, private val newsListener: NewsListener):
     RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
 
-    inner class ViewHolder(val binding: ListItemBinding) :
-        RecyclerView.ViewHolder(binding.root)
+    inner class ViewHolder(val binding: ListItemBinding, private val newsListener: NewsListener) :
+        RecyclerView.ViewHolder(binding.root){
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainAdapter.ViewHolder {
+
 
 //        if (layoutInflater==null) {
 //            layoutInflater = LayoutInflater.from(parent.context)
@@ -26,7 +29,7 @@ class MainAdapter(var news: MutableList<News>?):
         val binding =
             ListItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
-        return ViewHolder(binding)
+        return ViewHolder(binding,newsListener)
 
     }
 
@@ -34,16 +37,22 @@ class MainAdapter(var news: MutableList<News>?):
 
         with(holder){
             with(news?.get(position)){
+
+                binding.root.setOnClickListener {
+                    newsListener.onNewsClicked(news!!.elementAt(position))
+                }
                 binding.newSource.text = this?.source?.name
                 binding.title.text = this?.title
                 binding.date.text = this?.publishedAt
-                Picasso.get().load(this?.urlToImage).fit().centerCrop().noFade().into(binding.imageNews, object : Callback {
-                    override fun onSuccess() {
-                        binding.imageNews.animate().setDuration(300).alpha(1f).start()
-                    }
+                Picasso.get().load(this?.urlToImage).fit().centerCrop().noFade().into(
+                    binding.imageNews,
+                    object : Callback {
+                        override fun onSuccess() {
+                            binding.imageNews.animate().setDuration(300).alpha(1f).start()
+                        }
 
-                    override fun onError(e: Exception?) {}
-                })
+                        override fun onError(e: Exception?) {}
+                    })
             }
         }
     }
@@ -51,6 +60,8 @@ class MainAdapter(var news: MutableList<News>?):
     override fun getItemCount(): Int {
         return news!!.size
     }
+
+
 
 }
 
